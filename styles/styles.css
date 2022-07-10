@@ -657,9 +657,9 @@ section {
   padding: 0.8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--contact-text);
+  background-color: var(--color-grey-6);
   width: 100%;
-  color: var(--color-white);
+  color: var(--color-grey-1);
   resize: none;
 }
 .contact-content-con .right-contact .i-c-2 {
@@ -715,6 +715,20 @@ section {
   height: 100%;
   background-color: var(--color-secondary);
   transform: translateX(0);
+}
+
+.submit {
+  background: var(--color-secondary);
+  color: var(--color-grey-1);
+  border-style: solid;
+  border-color: var(--color-secondary);
+  border-radius: 30px;
+  height: 50px;
+  width: 100px;
+  text-shadow: none;
+}
+.submit:hover {
+  background-color: var(--color-grey-6);
 }
 
 .main-title {
