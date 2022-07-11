@@ -25,8 +25,8 @@
 }
 
 .light-mode {
-    --color-primary: #576CA8;
-    --color-secondary: #302B27;
+    --color-primary: #FFF3E4;
+    --color-secondary: #483434;
     --color-white: #191d2b;
     --color-black: #B2C8DF;
     --color-grey0: #12181b;
@@ -38,7 +38,7 @@
     --color-grey-6: #f8f8f8;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-    --box-color: #302B27;
+    --box-color: #EED6C4;
     --image-color: #F5F3F5;
     --contact-text: #F5F3F5;
 }
@@ -729,7 +729,7 @@ section {
             position: absolute;
             top: 50%;
             left: 50%;
-            color: var(--color-grey-5);
+            color: var(--color-grey-6);
             transition: all .4s ease-in-out;
             z-index: -1;
             transform: translate(-50%, -50%);
