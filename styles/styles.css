@@ -218,6 +218,7 @@ section {
   margin-left: 4rem;
   background-color: var(--image-color);
   transition: all 0.4s ease-in-out;
+  box-shadow: -6px 9px 8px 1px rgba(0, 0, 0, 0.56);
 }
 .header-content .left-header .image img {
   width: 100%;
