@@ -47,12 +47,10 @@
                 text-align: center;
             }
             .btn-con {
-                a {
-                    display:flex;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 24vh;
-                }
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                width: 20rem;
             }
         }
     }
@@ -75,7 +73,10 @@
     }
 
     .btn-con {
-        padding-left: 7.5rem;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20rem;
     }
     .header-content .right-header {
         padding-right: 1.5rem;
@@ -90,16 +91,10 @@
             p {
                 text-align: center;
             }
-            .btn-con {
-                margin: auto;
-                width: 30vh;
-                padding: 30px;
-            }
         }
         .right-about {
             padding-top: 2.5rem;
         }
-    
     }
 
     .main-title {
@@ -304,14 +299,6 @@
         .control {
             margin: 0.4rem .3rem;
         }
-    }
-
-    .btn-con {
-        padding: 0.1rem 0.2rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 24vh;
     }
 
     .main-btn .btn-text {

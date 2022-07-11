@@ -315,12 +315,6 @@ section {
   font-size: 2rem;
   text-transform: uppercase;
 }
-.about-container .left-about .btn-con a {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 24vh;
-}
 
 .about-stats {
   padding-bottom: 4rem;
@@ -450,7 +444,7 @@ section {
 }
 
 .port-text {
-  padding: 2rem 0;
+  padding-top: 5rem;
   text-align: center;
 }
 
@@ -560,8 +554,10 @@ section {
   filter: grayscale(100%);
   transition: all 0.4s ease-in-out;
 }
+.blogs .blog a {
+  display: flex;
+}
 .blogs .blog .blog-text {
-  margin-top: -7px;
   padding: 1.1rem;
   border-top: 8px solid var(--color-secondary);
 }
@@ -570,6 +566,7 @@ section {
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  color: var(--color-grey-6);
 }
 .blogs .blog .blog-text h4:hover {
   color: var(--color-secondary);
@@ -676,8 +673,9 @@ section {
 
 /*Independed components*/
 .btn-con {
-  display: flex;
+  display: inline-block;
   align-self: flex-start;
+  padding: 0 3rem;
 }
 
 .main-btn {
@@ -690,6 +688,8 @@ section {
   align-items: flex;
   align-items: center;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-btn .btn-text {
   padding: 0 2rem;
@@ -733,6 +733,7 @@ section {
 }
 
 .main-title {
+  padding: 2rem;
   text-align: center;
 }
 .main-title h2 {
@@ -801,11 +802,11 @@ section {
   .about-container .left-about p {
     text-align: center;
   }
-  .about-container .left-about .btn-con a {
+  .about-container .left-about .btn-con {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 24vh;
+    width: 20rem;
   }
 }
 @media screen and (max-width: 1070px) {
@@ -822,7 +823,10 @@ section {
     width: 18vh;
   }
   .btn-con {
-    padding-left: 7.5rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
   }
   .header-content .right-header {
     padding-right: 1.5rem;
@@ -838,11 +842,6 @@ section {
   }
   .about-container .left-about p {
     text-align: center;
-  }
-  .about-container .left-about .btn-con {
-    margin: auto;
-    width: 30vh;
-    padding: 30px;
   }
   .about-container .right-about {
     padding-top: 2.5rem;
@@ -1020,13 +1019,6 @@ section {
   }
   .controls .control {
     margin: 0.4rem 0.3rem;
-  }
-  .btn-con {
-    padding: 0.1rem 0.2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 24vh;
   }
   .main-btn .btn-text {
     font-size: 1rem;
