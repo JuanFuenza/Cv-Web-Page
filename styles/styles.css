@@ -1056,6 +1056,11 @@ section {
     padding-left: 1vh;
     padding-right: 1vh;
   }
+  #home > div > div.right-header > div > a {
+    padding: 0;
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
   .timeline {
     grid-template-columns: none;
   }
@@ -1077,7 +1082,12 @@ section {
   #about > div.about-container > div > div > a {
     padding: 0;
     padding-left: 1vh;
-    padding-right: 3vh;
+    padding-right: 1vh;
+  }
+  #home > div > div.right-header > div > a {
+    padding: 0;
+    padding-left: 1vh;
+    padding-right: 1vh;
   }
   .controls {
     top: auto;
