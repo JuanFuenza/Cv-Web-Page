@@ -248,6 +248,7 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  text-align: center;
 }
 
 /*About*/
@@ -676,49 +677,63 @@ section {
 
 /*Independed components*/
 .btn-con {
-  display: inline-block;
-  align-self: flex-start;
-  padding: 0 3rem;
+  padding: 2em 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .main-btn {
-  border-radius: 30px;
-  color: inherit;
-  font-weight: 600;
   position: relative;
-  border: 0.2rem solid var(--color-secondary);
-  display: flex;
-  align-items: flex;
-  align-items: center;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-.main-btn .btn-text {
-  padding: 0 2rem;
+  display: inline-block;
+  padding: 0.8em 4em;
+  border: 2px solid var(--color-secondary);
+  border-radius: 4vh;
+  color: var(--color-secondary);
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
 }
 .main-btn .btn-icon {
-  background-color: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 1rem;
+  padding: 0;
+  margin-left: 2.4rem;
+  position: absolute;
 }
+
 .main-btn::before {
-  content: "";
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateX(100%);
-  transition: all 0.4s ease-out;
+  bottom: 0;
+  left: 0;
   z-index: -1;
+  content: "";
+  background: var(--color-secondary);
+  transition: transform 0.3s;
 }
-.main-btn:hover::before {
-  width: 100%;
+
+.main-btn:hover {
+  color: var(--color-primary);
+}
+
+.btn-anim {
+  overflow: hidden;
+}
+
+.btn-anim::before {
+  right: auto;
+  bottom: auto;
+  width: 120%;
   height: 100%;
-  background-color: var(--color-secondary);
-  transform: translateX(0);
+  transform-origin: left top;
+  transform: skewX(-30deg) scale(0, 1);
+}
+
+.btn-anim:hover::before {
+  transform-origin: right top;
+  transform: skewX(-30deg) scale(1, 1);
 }
 
 .submit {
@@ -802,12 +817,6 @@ section {
   .about-container .left-about p {
     text-align: center;
   }
-  .about-container .left-about .btn-con {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20rem;
-  }
 }
 @media screen and (max-width: 1070px) {
   #contact > div > div.contact-content-con > div.left-contact > div.contact-icons {
@@ -821,12 +830,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     width: 18vh;
-  }
-  .btn-con {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20rem;
   }
   .header-content .right-header {
     padding-right: 1.5rem;
@@ -885,9 +888,6 @@ section {
   }
 }
 @media screen and (max-width: 750px) {
-  .btn-con {
-    padding-left: 3rem;
-  }
   .header-content .right-header {
     padding-right: 0.5rem;
   }
@@ -955,10 +955,6 @@ section {
   .about-container .left-about h4 {
     font-size: 1.8rem;
     text-align: center;
-  }
-  .about-container .left-about .btn-con {
-    width: auto;
-    padding: 0;
   }
   .portfolios {
     grid-template-columns: 1fr;
@@ -1054,5 +1050,48 @@ section {
   }
   .contact-content-con .left-contact .contact-info p {
     font-size: 0.8rem;
+  }
+  #about > div.about-container > div > div > a {
+    padding: 0;
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
+  .timeline {
+    grid-template-columns: none;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 0.2rem 0.5rem;
+  }
+}
+@media screen and (max-width: 287px) {
+  #about > div.about-container > div > div > a {
+    padding: 0;
+    padding-left: 1vh;
+    padding-right: 3vh;
+  }
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controls .control {
+    margin: 0.2rem 0.4rem;
+    width: 20px;
+    height: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */
