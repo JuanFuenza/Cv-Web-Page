@@ -545,9 +545,6 @@ section {
                 transition: all .4s ease-in-out;
                 cursor: pointer;
                 color: var(--color-grey-3);
-                span {
-                    font-size: 1rem;
-                }
                 &:hover {
                     color: var(--color-secondary);
 
@@ -557,6 +554,8 @@ section {
                 color: var(--color-grey-2);
                 line-height: 2rem;
                 padding-bottom: 1rem;
+                font-size: 1rem;
+                text-align: center;
             }
         }
     }
