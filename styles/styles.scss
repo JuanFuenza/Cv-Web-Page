@@ -540,12 +540,17 @@ section {
             border-top: 8px solid var(--color-secondary);
             h4 {
                 font-size: 1.5rem;
+                text-align: center;
                 margin-bottom: .7rem;
                 transition: all .4s ease-in-out;
                 cursor: pointer;
                 color: var(--color-grey-3);
+                span {
+                    font-size: 1rem;
+                }
                 &:hover {
                     color: var(--color-secondary);
+
                 }
             }
             p {

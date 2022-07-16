@@ -567,10 +567,14 @@ section {
 }
 .blogs .blog .blog-text h4 {
   font-size: 1.5rem;
+  text-align: center;
   margin-bottom: 0.7rem;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
   color: var(--color-grey-3);
+}
+.blogs .blog .blog-text h4 span {
+  font-size: 1rem;
 }
 .blogs .blog .blog-text h4:hover {
   color: var(--color-secondary);
